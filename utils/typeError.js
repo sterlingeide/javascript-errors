@@ -1,6 +1,6 @@
 function typeError(){
     try {
-        throw new TypeError('Hello', "someFile.js", 10)
+        throw new TypeError('Hello')
     } catch (e) {
         console.log(e instanceof TypeError)  // true
         console.log(e.message)               // "Hello"

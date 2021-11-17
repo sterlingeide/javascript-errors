@@ -1,6 +1,6 @@
 function syntaxError(){
     try {
-        throw new SyntaxError('Hello', 'someFile.js', 10);
+        throw new SyntaxError('Hello');
       } catch (e) {
         console.error(e instanceof SyntaxError); // true
         console.error(e.message);                // Hello

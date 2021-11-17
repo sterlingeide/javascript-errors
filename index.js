@@ -17,6 +17,7 @@ catch(error)
     if (error instanceof RangeError)
     {
         console.log('number error happened');
+        console.log(error.stack)
         // Handle the error
     }
 }
@@ -30,6 +31,7 @@ catch(error)
     if(error instanceof RangeError)
     {
         console.log('string error happened')
+        console.log(error.stack)
         // Handle the error
     }
 }
@@ -44,7 +46,8 @@ aggregateError.aggregateError();
 try{
     internalError.loopCheck(0);
 }
-catch
+catch (e)
 {
     console.log('loop error happened')
+    console.log(e.stack)
 }
